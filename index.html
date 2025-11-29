@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tuesday Trinkets — Home</title>
+  <link rel="stylesheet" href="styles.css" /> 
+</head>
+<body style="background: url(bg2.jpg) no-repeat center center fixed; background-size: cover;">
+  <div class="wrap">
+
+    <header>
+      <div class="logo">
+        <img src="tt logo cmyk.png" alt="tt logo" />
+      </div>
+      <nav>
+        <a href="after-band.html" class="active">home</a>
+        <a href="#tour">tour</a>
+        <a href="merch.html">merch</a>
+        <a href="#music">music</a>
+        <a href="gallery.html">gallery</a>
+      </nav>
+    </header>
+
+    <section class="hero" style="background-image: url(hero.jpg)"> <div class="hero-inner">
+        <h1>Listen to our debut single!</h1>
+        <p class="small muted">Available on all streaming platforms</p>
+        <a class="cta" href="#music">Listen / Buy</a>
+      </div>
+    </section>
+
+    <main class="main">
+
+      <section class="card tour glass-box" id="tour">
+        <h3>tour & news</h3>
+        <ul>
+          <li><span>12/13 — Suazo Bar, Davao</span> <a href="#">tickets</a></li>
+          <li><span>TBA — Mows Matalino QC</span> <a href="#">tickets</a></li>
+          <li><span>TBA — Sari Sari Makati</span> <a href="#">tickets</a></li>
+        </ul>
+      </section>
+
+      <section class="card main-content glass-box">
+        <h3>Welcome to Tuesday Trinkets</h3>
+        <p>We are a band from Manila, Philippines, blending elements of dream-pop and shoegaze with a hint of 90s nostalgia. Our debut single, "Cigarettes, Beer, and Stray Cats," is out now!</p>
+        <p>Keep an eye on our tour dates and follow us on social media for the latest news and updates. Thanks for the support!</p>
+        <a class="cta" href="merch.html">View Merch Store</a>
+      </section>
+
+
+      <section class="card tracks glass-box" id="music">
+        <h3>music</h3>
+        <div id="tracks-container">
+          <div class="track" data-src="song.mp3">
+            <button class="play">Play</button>
+            <div class="meta"><strong>Cigarettes, Beer, and Stray Cats</strong><div class="muted small">4:30</div></div>
+            <button class="add-to-cart">Save</button>
+          </div>
+
+          <div class="track" data-src="comingsoon.mp3">
+            <button class="play">Play</button>
+            <div class="meta"><strong>Coming soon</strong><div class="muted small">---</div></div>
+            <button class="add-to-cart">Pre-save</button>
+          </div>
+        </div>
+
+        <audio id="player" controls style="width:100%"></audio>
+      </section>
+
+      <section class="card glass-box cart-panel">
+        <h3>Your Cart (<span id="cart-count">0</span>)</h3>
+        <div id="cart-items" class="small muted">Your cart is empty.</div>
+        <button id="checkout" class="cta">Checkout</button>
+      </section>
+
+      <section class="card glass-box small muted footer-info">
+        © Tuesday Trinkets 2025<br>
+        Website by ChocoPao
+      </section>
+
+    </main>
+
+    </div>
+
+  <script src="tt.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Merch</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background: url(bg2.jpg) no-repeat center center fixed; background-size: cover;">
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <img src="tt logo cmyk.png" alt="After logo">
+      </div>
+      <nav>
+        <a href="after-band.html">home</a>
+        <a href="merch.html" class="active">merch</a>
+        <a href="gallery.html">gallery</a>
+      </nav>
+    </header>
+
+    <main class="main" style="grid-template-columns: 150px;">
+      
+      <div class="card main-content">
+        <h2>Merch Store</h2>
+        <div style="display:flex; justify-content:center;"> 
+          <div class="gallery-grid" style="max-width: 960px;"> 
+            <img src="cbsc icons.png" alt="shirt">
+            <img src="cbsc icons 2.png" alt="vinyl">
+            <img src="logo shirt.png" alt="sticker">
+            <img src="logo shirt 2.png" alt="sticker">
+            <img src="gatekeep shirt.png" alt="sticker">
+            <img src="gatekeep shirt 2.png" alt="sticker">
+            <img src="womens exclusive.png" alt="sticker">
+            <img src="womens exclusive 2.png" alt="sticker">
+          </div>
+        </div>
+      </div>
+      
+      <section class="card glass-box cart-panel">
+        <h3>Your Cart (<span id="cart-count">0</span>)</h3>
+        <div id="cart-items" class="small muted">Your cart is empty.</div>
+        <button id="checkout" class="cta">Checkout</button>
+      </section>
+
+      <section class="card glass-box small muted footer-info" style="grid-column: 1/3;">
+        © Tuesday Trinkets 2025<br>
+        Website by ChocoPao
+      </section>
+    </main>
+
+  </div>
+  <script src="tt.js"></script>
+</body>
+</html>
